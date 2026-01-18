@@ -16,15 +16,15 @@ The objective is to provide clear trade-offs between **cost and control**, allow
 
 ## Repository Structure
 
-/prompts
-prompt_lowLevel.md
-prompt_midLevel.md
-prompt_highLevel.md
+/prompts:
+- prompt_lowLevel.md
+- prompt_midLevel.md
+- prompt_highLevel.md
 
-/examples
-example_lowLevel.md
-example_midLevel.md
-example_highLevel.md
+/examples:
+- example_lowLevel.md
+- example_midLevel.md
+- example_highLevel.md
 
 - **/prompts**: Each file contains a complete, standalone prompt template that can be used in chat-based workflows or injected directly into API calls.
 - **/examples**: contains practical, real-world examples of using each prompt level with the same scenario.
