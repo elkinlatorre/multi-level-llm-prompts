@@ -17,11 +17,17 @@ The objective is to provide clear trade-offs between **cost and control**, allow
 ## Repository Structure
 
 /prompts
-├── prompt_lowLevel.md
-├── prompt_midLevel.md
-└── prompt_highLevel.md
+prompt_lowLevel.md
+prompt_midLevel.md
+prompt_highLevel.md
 
-Each file contains a complete, standalone prompt template that can be used in chat-based workflows or injected directly into API calls.
+/examples
+example_lowLevel.md
+example_midLevel.md
+example_highLevel.md
+
+- **/prompts**: Each file contains a complete, standalone prompt template that can be used in chat-based workflows or injected directly into API calls.
+- **/examples**: contains practical, real-world examples of using each prompt level with the same scenario.
 
 ---
 
@@ -116,6 +122,34 @@ Maximum control, clarity, and robustness.
 - Higher token usage
 - Increased cost per request
 - More verbose configuration
+
+---
+
+## Examples
+
+All examples use the same scenario:  
+**Generate a Python function to validate if a password is secure**  
+Rules: Minimum 8 characters, at least one uppercase, one lowercase, and one digit.
+
+### Example: Low-Level Prompt
+
+**File:** `/examples/example_lowLevel.md`  
+- Shows minimal prompt structure and fast code generation.
+- Code output is functional but minimal reasoning and validation.
+
+### Example: Mid-Level Prompt
+
+**File:** `/examples/example_midLevel.md`  
+- Shows structured context and partial reasoning control.
+- Code is deterministic and readable, suitable for production.
+
+### Example: High-Level Prompt
+
+**File:** `/examples/example_highLevel.md`  
+- Shows fully structured prompt with reasoning configuration, validation, and self-check.
+- Code is auditable, deterministic, and ideal for critical workflows.
+
+> Note: All examples include the full prompt used, expected Python output, and notes about usage.
 
 ---
 
